@@ -126,7 +126,7 @@ function onSubmit(eve){
 
               todoContainer.prepend(div);
               spinner.classList.add('d-none');
-              
+              todoForm.reset();
             }else{ 
               spinner.classList.add('d-none');
               snackbar("Failed to submit todo",'error');
@@ -287,7 +287,7 @@ function onEdit(ele){
 
 
 
-  
+
 
 todoForm.addEventListener('submit', onSubmit);
 updateTodo.addEventListener('click', onUpdate);
