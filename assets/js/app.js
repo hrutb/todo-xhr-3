@@ -109,6 +109,7 @@ function onSubmit(eve){
                let res =JSON.parse(xhr.response);
             let div =document.createElement('div');
                 div.id =res.id; 
+                div.className= 'col-md-4 mb-4'
                 div.innerHTML= `<div class="card ">
                             <div class="card-header "  data-toggle="tooltip" data-placement="top" title="${newTodo.title}">
                                 <h4>${newTodo.title}</h4>
