@@ -1,0 +1,148 @@
+.spinner{
+  position: fixed;
+  background-color: rgba(255,255,255,0.66); 
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+    
+    
+} 
+
+
+
+
+
+body{
+    background: linear-gradient(135deg,#f5f7fa,#e4e8f0);
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Form Card */
+.todo-form-card{
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,.1);
+}
+
+.todo-form-card .card-header{
+    background: linear-gradient(135deg,#0d6efd,#00c6ff);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.todo-form-card .card-footer{ 
+     background: linear-gradient(135deg,#3b89ff,#00c6ff);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.todo-form-card .card-header h3{
+    margin: 0;
+    font-weight: 700;
+}
+
+
+
+.form-control:focus{
+    box-shadow: 0 0 10px rgba(13,110,253,.3);
+}
+
+
+
+/* Buttons */
+#addTodo,
+#updateTodo{
+    border-radius: 5px;
+    font-weight: 600;
+    margin-top: 10px;
+    padding: 10px;
+    transition: all .3s ease;
+}
+
+#addTodo:hover,
+#updateTodo:hover{
+    transform: translateY(-2px);
+}
+
+/* Todo Cards */
+.todo-card{
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+    transition: all .3s ease;
+}
+
+.todo-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,.12);
+}
+
+.todo-card .card-header{
+    background: #0d6efd;
+    color: white;
+    border: none;
+}
+
+.todo-card .card-footer{
+    background: white;
+}
+
+.todo-card i{
+    cursor: pointer;
+    transition: .3s;
+}
+
+.todo-card i:hover{
+    transform: scale(1.2);
+}
+
+.fa-pen-to-square:hover{
+    color: #0d6efd !important;
+}
+
+.fa-trash-can:hover{
+    color: #dc3545 !important;
+}
+
+
+
+
+h4{ 
+     text-overflow: ellipsis;
+     overflow:hidden;
+     white-space: nowrap;
+}
+
+
+i:hover{
+    cursor: pointer;
+}
+
+
+
+
+/* Mobile */
+@media(max-width:600px){
+
+    .card-header h3{
+        font-size: 1.7rem;
+    }
+
+    .todo-card{
+        margin-bottom: 20px;
+    }
+
+    #addTodo,
+    #updateTodo{
+        width: 100%;
+    }
+}
