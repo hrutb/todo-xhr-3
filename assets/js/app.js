@@ -87,12 +87,17 @@ function createCards(arr){
 } 
 
 
+
+
+
+
 function onSubmit(eve){ 
-     eve.preventDefault(); 
+    
+  eve.preventDefault(); 
 
      let newTodo= { 
           title:titleControl.value ,
-          completed:completedControl.value 
+          completed:completedControl.value ==='Yes'
 
         }
           spinner.classList.remove('d-none');
